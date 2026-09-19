@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { profile } from "@/lib/data/profile";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { IconHex, IconLogo } from "./Icons";
 
 const navLinks = [
@@ -62,10 +63,10 @@ export default function Navbar({ isLoaded = true }: NavbarProps) {
         scrolledToTop
           ? "h-[100px] bg-[#0a192f]/85 backdrop-blur-[10px] shadow-none translate-y-0"
           : isScrolledNav
-          ? "h-[70px] bg-[#0a192f]/85 backdrop-blur-[10px] shadow-[0_10px_30px_-10px_rgba(2,12,27,0.7)] translate-y-0"
-          : isHidden
-          ? "h-[70px] bg-[#0a192f]/85 backdrop-blur-[10px] shadow-[0_10px_30px_-10px_rgba(2,12,27,0.7)] -translate-y-full"
-          : "h-[100px] bg-[#0a192f]/85 backdrop-blur-[10px] translate-y-0"
+            ? "h-[70px] bg-[#0a192f]/85 backdrop-blur-[10px] shadow-[0_10px_30px_-10px_rgba(2,12,27,0.7)] translate-y-0"
+            : isHidden
+              ? "h-[70px] bg-[#0a192f]/85 backdrop-blur-[10px] shadow-[0_10px_30px_-10px_rgba(2,12,27,0.7)] -translate-y-full"
+              : "h-[100px] bg-[#0a192f]/85 backdrop-blur-[10px] translate-y-0"
       } ${
         isLoaded
           ? "opacity-100"
@@ -112,16 +113,14 @@ export default function Navbar({ isLoaded = true }: NavbarProps) {
 
         <div
           className={`ml-4 transition-all duration-500 ${
-            isLoaded
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 -translate-y-4"
+            isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
           }`}
           style={{
             transitionDelay: `${isLoaded ? (navLinks.length + 1) * 100 : 0}ms`,
           }}
         >
           <a
-            href="/resume.pdf"
+            href={profile.resume}
             target="_blank"
             rel="noopener noreferrer"
             className="small-btn text-[13px] px-4 py-2.5"
@@ -173,7 +172,7 @@ export default function Navbar({ isLoaded = true }: NavbarProps) {
             </Link>
           ))}
           <a
-            href="/resume.pdf"
+            href={profile.resume}
             target="_blank"
             rel="noopener noreferrer"
             className="small-btn mt-4 text-[13px]"

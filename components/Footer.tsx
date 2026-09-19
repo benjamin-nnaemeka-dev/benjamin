@@ -1,7 +1,7 @@
 "use client";
 
-import { ApexlyIcon, GitHubIcon, LinkedInIcon, MailIcon } from "./Icons";
 import { profile } from "@/lib/data/profile";
+import { ApexlyIcon, GitHubIcon, LinkedInIcon, MailIcon } from "./Icons";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   GitHub: GitHubIcon,
@@ -51,7 +51,7 @@ export default function Footer() {
           >
             Brittany Chiang
           </a>{" "}
-          &amp; Built by{" "}
+          &amp; Engineered in Next.js 15 by{" "}
           <a
             href="https://github.com/benjamin-nnaemeka-dev"
             target="_blank"

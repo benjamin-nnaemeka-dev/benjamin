@@ -11,13 +11,14 @@ export interface ProfileData {
     name: string;
     url: string;
   }[];
+  resume: string;
 }
 
 export const profile: ProfileData = {
   name: "Benjamin Nnaemeka",
   tagline: "I build things for mobile and web.",
   subTagline:
-    "Software engineer building Android apps, web products, and workflow automation. Founder of APEXLY.",
+    "Software engineer building Android apps, web products, and automation tools. Founder of APEXLY, creating identity verification solutions for Nigerian businesses.",
   email: "hi@benjamin-nnaemeka.dev",
   avatar: "/profile/profile-photo.png",
   heroBio:
@@ -29,6 +30,8 @@ export const profile: ProfileData = {
   skills: [
     "Kotlin & Jetpack Compose",
     "Android SDK & Coroutines",
+    "MVVM & MVI Architecture",
+    "Firebase & Cloud Functions",
     "Next.js & TypeScript",
     "PostgreSQL & Supabase",
     "Node.js & REST APIs",
@@ -40,4 +43,5 @@ export const profile: ProfileData = {
     { name: "Apexly", url: "https://getapexly.com" },
     { name: "Email", url: "mailto:hi@benjamin-nnaemeka.dev" },
   ],
+  resume: "/resume/Benjamin Nnaemeka.pdf",
 };

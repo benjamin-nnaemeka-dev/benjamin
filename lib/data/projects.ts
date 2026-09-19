@@ -20,18 +20,18 @@ export const featuredProjects: FeaturedProject[] = [
   {
     title: "Idyntic",
     description:
-      "A service for retrieving and verifying NIN, BVN, and WAEC records. Built for business centres and digital service providers across Nigeria.",
+      "A service for retrieving and verifying NIN and BVN records, with an identity API for businesses and developers. Built for business centres and digital service providers across Nigeria.",
     tech: ["Next.js", "TypeScript", "PostgreSQL", "BudPay", "Tailwind CSS"],
     external: "https://idyntic.getapexly.com",
-    docs: "https://idyntic.getapexly.com/docs",
+    docs: "https://idyntic.getapexly.com/developers/docs",
     image: "/projects/idyntic.png",
   },
   {
     title: "Cliqpay",
     description:
-      "A mobile bill payment app for airtime, data, electricity, cable TV, and wallet transfers.",
+      "A mobile bill payment app for airtime, data, electricity, cable TV, utility payments, virtual wallet funding, and cashback.",
     tech: ["Kotlin", "Android SDK", "Firebase", "Cloud Functions", "Paging 3"],
-    external: "https://getapexly.com",
+    external: "https://cliqpay.getapexly.com",
     image: "/projects/cliqpay.png",
   },
   {
@@ -56,7 +56,7 @@ export const otherProjects: OtherProject[] = [
   {
     title: "LinkUp",
     description:
-      "An Android tool for managing and automating LinkedIn connection requests from profile lists.",
+      "An Android tool for managing and automating LinkedIn connection requests from list of profile urls.",
     tech: ["Kotlin", "Jetpack Compose", "AccessibilityService", "Coroutines"],
     github: "https://github.com/benjamin-nnaemeka-dev/linkup",
   },

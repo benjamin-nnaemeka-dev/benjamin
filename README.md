@@ -10,7 +10,7 @@
   </p>
 
   <p>
-    A sleek, responsive personal portfolio engineered with <strong>Next.js 15 (App Router)</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>, inspired by the Brittany Chiang v4 design aesthetic.
+    A sleek, responsive personal portfolio engineered with <strong>Next.js 15 (App Router)</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>, inspired & designed by the Brittany Chiang v4 design aesthetic.
   </p>
 
   <p>
@@ -151,8 +151,20 @@ All content is decoupled from presentation components. To update any text, exper
 - **Website:** [benjamin-nnaemeka.dev](https://benjamin-nnaemeka.dev)
 - **GitHub:** [@benjamin-nnaemeka-dev](https://github.com/benjamin-nnaemeka-dev)
 - **LinkedIn:** [benjamin-nnaemeka](https://linkedin.com/in/benjamin-nnaemeka)
-- **Studio:** [APEXLY](https://getapexly.com)
 - **Email:** [hi@benjamin-nnaemeka.dev](mailto:hi@benjamin-nnaemeka.dev)
+
+---
+
+## Credits & Attribution
+
+This portfolio is built as an open source template and derivative work.
+
+- **Original Visual Design:** [Brittany Chiang](https://brittanychiang.com) (v4 Portfolio)
+- **Next.js 15 Engineering & Refinements:** [Benjamin Nnaemeka](https://benjamin-nnaemeka.dev)
+
+### Usage & Forks
+
+If you fork, copy, or adapt this Next.js 15 template for your own portfolio, please maintain open source community standards by keeping the attribution footer links active and crediting both **Brittany Chiang** (for the design) and **Benjamin Nnaemeka** (for this Next.js implementation and architecture).
 
 ---
 

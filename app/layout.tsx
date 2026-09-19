@@ -1,6 +1,6 @@
+import { profile } from "@/lib/data/profile";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import { profile } from "@/lib/data/profile";
 
 export const viewport: Viewport = {
   themeColor: "#0a192f",
@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   description: profile.subTagline,
   keywords: [
     "Benjamin Nnaemeka",
+    "Software Engineer",
+    "Full Stack Developer",
+    "benjamin-nnaemeka.dev",
+    "benjamin",
+    "nnaemeka",
     "Apexly",
     "Idyntic",
     "Cliqpay",

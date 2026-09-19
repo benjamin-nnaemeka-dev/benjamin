@@ -103,7 +103,7 @@ export default function Projects() {
                       href={proj.docs}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-mono text-xs text-green hover:underline"
+                      className="text-lg text-green hover:underline inline-flex items-center leading-none"
                     >
                       Documentation ↗
                     </a>
@@ -113,9 +113,10 @@ export default function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="External Link"
-                    className="p-1 hover:text-green transition-colors"
+                    className="text-lg hover:text-green transition-colors inline-flex items-center gap-1 whitespace-nowrap leading-none"
                   >
-                    <ExternalLinkIcon className="h-5 w-5" />
+                    <span>Learn More</span>
+                    <ExternalLinkIcon className="h-[16px] w-[16px] shrink-0 -translate-y-[2px]" />
                   </a>
                 </div>
               </div>
