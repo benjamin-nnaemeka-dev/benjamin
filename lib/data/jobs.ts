@@ -3,7 +3,7 @@ export interface Job {
   tabLabel: string;
   title: string;
   company: string;
-  url: string;
+  url?: string;
   range: string;
   duties: string[];
   certificate?: {
@@ -61,5 +61,20 @@ export const jobs: Job[] = [
       name: "Diploma in Java Technologies",
       url: "https://i.ibb.co/FLbKQzCn/NIIT-Certificate.png",
     },
+  },
+  {
+    id: "dollars-de-don",
+    tabLabel: "Dollars De Don",
+    title: "Operations Manager",
+    company: "Dollars De Don Digital Services Limited",
+    url: "",
+    range: "2021 - 2024",
+    duties: [
+      "Progressed from System Operator to Operations Manager, taking on more responsibility for the daily running of the business.",
+      "Managed customer services, printing, computer operations, digital services, staffing, and day-to-day business activities.",
+      "Trained and supervised staff and students on computer operations, digital tools, and customer service.",
+      "Handled client requests, business records, financial reporting, and service delivery.",
+      "Improved daily operations and increased the business's capacity without adding more staff.",
+    ],
   },
 ];

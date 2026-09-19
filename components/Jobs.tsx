@@ -70,14 +70,18 @@ export default function Jobs() {
             <span className="text-green">
               {" "}
               @{" "}
-              <a
-                href={activeJob.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline"
-              >
-                {activeJob.company}
-              </a>
+              {activeJob.url ? (
+                <a
+                  href={activeJob.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  {activeJob.company}
+                </a>
+              ) : (
+                <span>{activeJob.company}</span>
+              )}
             </span>
           </h3>
 
