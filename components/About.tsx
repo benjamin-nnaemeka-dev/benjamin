@@ -1,11 +1,19 @@
 "use client";
 
 import { profile } from "@/lib/data/profile";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 max-w-[900px] mx-auto scroll-mt-20">
+    <motion.section
+      id="about"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.6, ease: [0.645, 0.045, 0.355, 1] }}
+      className="py-24 max-w-[900px] mx-auto scroll-mt-20"
+    >
       <h2 className="numbered-heading">
         <span className="text-green font-mono text-xl sm:text-2xl mr-2 font-normal">
           01.
@@ -18,10 +26,7 @@ export default function About() {
         {/* Left Column: Text */}
         <div className="space-y-4 text-base sm:text-[20px] leading-[1.3] text-slate">
           {profile.aboutParagraphs.map((paragraph, idx) => (
-            <p
-              key={idx}
-              dangerouslySetInnerHTML={{ __html: paragraph }}
-            />
+            <p key={idx} dangerouslySetInnerHTML={{ __html: paragraph }} />
           ))}
 
           <p className="pt-2 text-slate-light">
@@ -64,6 +69,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

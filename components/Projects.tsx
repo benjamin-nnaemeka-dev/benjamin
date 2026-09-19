@@ -1,12 +1,20 @@
 "use client";
 
 import { featuredProjects, otherProjects } from "@/lib/data/projects";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { ExternalLinkIcon, FolderIcon, GitHubIcon } from "./Icons";
 
 export default function Projects() {
   return (
-    <section id="work" className="py-24 max-w-[1000px] mx-auto scroll-mt-20">
+    <motion.section
+      id="work"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.6, ease: [0.645, 0.045, 0.355, 1] }}
+      className="py-24 max-w-[1000px] mx-auto scroll-mt-20"
+    >
       <h2 className="numbered-heading">
         <span className="text-green font-mono text-xl sm:text-2xl mr-2 font-normal">
           03.
@@ -185,6 +193,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

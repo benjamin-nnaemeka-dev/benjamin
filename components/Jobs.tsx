@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import { jobs } from "@/lib/data/jobs";
+import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function Jobs() {
   const [activeTabId, setActiveTabId] = useState("apexly");
@@ -9,7 +10,14 @@ export default function Jobs() {
   const activeIndex = jobs.findIndex((j) => j.id === activeTabId);
 
   return (
-    <section id="experience" className="py-24 max-w-[700px] mx-auto scroll-mt-20">
+    <motion.section
+      id="experience"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.6, ease: [0.645, 0.045, 0.355, 1] }}
+      className="py-24 max-w-[700px] mx-auto scroll-mt-20"
+    >
       <h2 className="numbered-heading">
         <span className="text-green font-mono text-xl sm:text-2xl mr-2 font-normal">
           02.
@@ -78,14 +86,19 @@ export default function Jobs() {
 
           <ul className="mt-6 space-y-3.5">
             {activeJob.duties.map((duty, idx) => (
-              <li key={idx} className="relative pl-6 text-slate text-[16px] sm:text-[18px] leading-[1.4]">
-                <span className="absolute left-0 top-0.5 text-green text-sm">▹</span>
+              <li
+                key={idx}
+                className="relative pl-6 text-slate text-[16px] sm:text-[18px] leading-[1.4]"
+              >
+                <span className="absolute left-0 top-0.5 text-green text-sm">
+                  ▹
+                </span>
                 <span>{duty}</span>
               </li>
             ))}
           </ul>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
