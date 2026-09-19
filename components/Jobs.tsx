@@ -84,6 +84,32 @@ export default function Jobs() {
             {activeJob.range}
           </p>
 
+          {activeJob.certificate && (
+            <div className="mt-2.5">
+              <a
+                href={activeJob.certificate.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-[12px] font-mono text-green hover:underline bg-green/10 px-3 py-1 rounded-full border border-green/20 hover:bg-green/15 transition-all leading-none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-3.5 w-3.5 shrink-0 -translate-y-[0.5px]"
+                >
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+                <span>View Certificate</span>
+              </a>
+            </div>
+          )}
+
           <ul className="mt-6 space-y-3.5">
             {activeJob.duties.map((duty, idx) => (
               <li

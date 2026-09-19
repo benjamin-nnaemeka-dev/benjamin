@@ -6,6 +6,10 @@ export interface Job {
   url: string;
   range: string;
   duties: string[];
+  certificate?: {
+    name: string;
+    url: string;
+  };
 }
 
 export const jobs: Job[] = [
@@ -35,6 +39,10 @@ export const jobs: Job[] = [
       "Built the system with Vapi, n8n, Supabase, and a React dashboard for orders, reservations, escalations, call logs, and transcripts.",
       "Graduated with Distinction and was recognized as the best student in the AI Automation Engineering cohort.",
     ],
+    certificate: {
+      name: "AI Automation Engineering",
+      url: "https://i.ibb.co/5XQFJ1MS/TS-Academy-Certificate-6963.png",
+    },
   },
   {
     id: "niit",
@@ -49,5 +57,9 @@ export const jobs: Job[] = [
       "Learned core Android concepts including OOP, interfaces, abstraction, and multithreading.",
       "Built and connected apps to local databases and Firebase backends.",
     ],
+    certificate: {
+      name: "Diploma in Java Technologies",
+      url: "https://i.ibb.co/FLbKQzCn/NIIT-Certificate.png",
+    },
   },
 ];
