@@ -16,7 +16,7 @@ export interface ProfileData {
 
 export const profile: ProfileData = {
   name: "Benjamin Nnaemeka",
-  tagline: "I build things for mobile and web.",
+  tagline: "I build things for mobile, web and AI.",
   subTagline:
     "Software engineer building Android apps, web products, and automation tools. Founder of APEXLY, creating identity verification solutions for Nigerian businesses.",
   email: "hi@benjamin-nnaemeka.dev",
