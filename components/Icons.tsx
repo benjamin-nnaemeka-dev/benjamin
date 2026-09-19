@@ -211,6 +211,23 @@ export function CheckIcon(props: IconProps) {
 export function ApexlyIcon(props: IconProps) {
   return (
     <svg
+      viewBox="0 0 336 326"
+      fill="currentColor"
+      aria-hidden="true"
+      {...props}
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M169.555 0.856568C169.244 1.46423 130.939 74.8415 84.4318 163.918C37.9252 252.993 -0.0690143 325.931 9.41281e-05 326C0.148184 326.148 208.625 236.935 208.936 236.591C209.052 236.463 204.572 231.261 198.98 225.032C191.171 216.333 188.643 213.712 188.077 213.732C187.555 213.751 105.457 246.985 87.4878 254.452C86.4185 254.897 86.3863 254.891 86.8612 254.339C88.7245 252.174 172.375 158.631 173.325 157.65L174.519 156.417L236.868 219.45L299.216 282.482H317.608H336L335.52 281.743C335.255 281.337 298.052 217.851 252.845 140.662C207.638 63.474 170.531 0.192115 170.386 0.035851C170.24 -0.120413 169.866 0.248909 169.555 0.856568Z"
+      />
+    </svg>
+  );
+}
+
+export function AwardIcon(props: IconProps) {
+  return (
+    <svg
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -220,9 +237,8 @@ export function ApexlyIcon(props: IconProps) {
       aria-hidden="true"
       {...props}
     >
-      <path d="M12 2 2 7l10 5 10-5-10-5Z" />
-      <path d="m2 17 10 5 10-5" />
-      <path d="m2 12 10 5 10-5" />
+      <circle cx="12" cy="8" r="7" />
+      <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
     </svg>
   );
 }
