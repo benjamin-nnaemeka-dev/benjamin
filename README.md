@@ -44,6 +44,8 @@
 
 <br />
 
+![Screenshot](assets/screenshot.png)
+
 ---
 
 ## Overview
@@ -95,11 +97,14 @@ This repository contains the source code for my personal developer portfolio, hi
 │   │   ├── profile.ts       # Bio, skills, socials & contact details
 │   │   └── projects.ts      # Featured & other engineering projects
 │   └── utils.ts             # Tailwind class merging helper
-└── public/
-    ├── fonts/               # Self-hosted Calibre and SF Mono web fonts
-    ├── profile/             # Profile avatar image
-    ├── projects/            # 16:10 high-resolution project screenshots
-    └── logo.svg             # Hexagonal brand vector asset
+├── public/
+│    ├── fonts/               # Self-hosted Calibre and SF Mono web fonts
+│    ├── profile/             # Profile avatar image
+│    ├── projects/            # 16:10 high-resolution project screenshots
+│    ├── resume/              # Resume pdf
+│    └── logo.svg             # Hexagonal brand vector asset
+│
+└── assets/
 ```
 
 ---
